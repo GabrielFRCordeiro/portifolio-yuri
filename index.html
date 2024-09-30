@@ -23,22 +23,22 @@
                 <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                    <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                    <a class="nav-link text-light" href="#trabalhos">TRABALHOS</a>
-                </li>
-                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                    <a class="nav-link text-light" href="#biografia">BIOGRAFIA</a>
-                </li>
-                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                    <a class="nav-link text-light" href="#contato">CONTATO</a>
-                </li>
-                </ul>
-            </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                            <a class="nav-link active text-light" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                            <a class="nav-link text-light" href="#trabalhos">TRABALHOS</a>
+                        </li>
+                        <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                            <a class="nav-link text-light" href="#biografia">BIOGRAFIA</a>
+                        </li>
+                        <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                            <a class="nav-link text-light" href="#contato">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
 
@@ -55,7 +55,6 @@
     <main class="container my-5">
         <!-- Cards -->
         <section class="d-flex flex-wrap justify-content-around align-items-center h-100 my-5" id="trabalhos">
-            <!-- <h2 class="col-12 text-center mb-4" style="font-weight: 400; font-size: 2.5em; letter-spacing: 0.25em;">Trabalhos</h2> -->
             <div class="col-9 mx-auto">
                 <img src="assets/trabalho.png" alt="Trabalhos" class="w-50 position-relative mb-5 titulo_secao">
             </div>
@@ -96,13 +95,13 @@
     </main>
 
     <!-- Biografia -->
-    <section class="d-flex flex-column flex-lg-row justify-content-around align-items-center" style="margin-top: 6rem;" id="biografia"> <!-- colocar style no css -->
+    <section class="d-flex flex-column flex-lg-row justify-content-around align-items-center" id="biografia">
         <div class="col-9 col-lg-4">
             <img src="assets/sobre_mim.png" alt="Trabalhos" class="w-50 position-relative mb-3">
-            <p id="biografia" class="h-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum corporis aperiam, deleniti inventore deserunt temporibus culpa tempore odio ipsum! Quibusdam, veritatis. Voluptate quia corrupti, dolorum fugit ipsum perferendis ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quibusdam officiis neque fuga laboriosam ipsum impedit quae. Vero, tempora quaerat ipsam dolorum deserunt sapiente in placeat voluptas qui, temporibus iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque debitis doloremque rem laborum neque. Molestiae ipsa cum, laudantium sequi deleniti minus fugiat. Consequatur, autem. Deserunt similique perferendis cupiditate natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non quisquam. Ipsum vero nostrum quasi, sapiente dolorem consectetur deserunt. Impedit earum, inventore nesciunt excepturi id numquam veritatis fugiat explicabo officia.</p>
+            <p id="biografia_texto" class="h-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum corporis aperiam, deleniti inventore deserunt temporibus culpa tempore odio ipsum! Quibusdam, veritatis. Voluptate quia corrupti, dolorum fugit ipsum perferendis ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quibusdam officiis neque fuga laboriosam ipsum impedit quae. Vero, tempora quaerat ipsam dolorum deserunt sapiente in placeat voluptas qui, temporibus iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque debitis doloremque rem laborum neque. Molestiae ipsa cum, laudantium sequi deleniti minus fugiat. Consequatur, autem. Deserunt similique perferendis cupiditate natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non quisquam. Ipsum vero nostrum quasi, sapiente dolorem consectetur deserunt. Impedit earum, inventore nesciunt excepturi id numquam veritatis fugiat explicabo officia.</p>
         </div>
         <div class="col-lg-3 mt-4 mt-lg-0">
-            <img src="./assets/img_sobre-mim.png" alt="Yuri meio diferente" id="foto_yuri" class="w-100">
+            <img src="./assets/img_sobre-mim.png" alt="Fotógrafo Yuri, usando camiseta do Palmeiras, segurando uma câmera" id="foto_yuri" class="w-100">
         </div>
     </section>
 
@@ -136,9 +135,9 @@
         </nav>
 
         <!-- Cadastrar E-mail -->
-        <form class="col-10 col-md-4 my-5" action="https://formspree.io/f/mnnaejel" method="POST"> 
+        <form class="col-10 col-md-4 my-5" action="https://formspree.io/f/mnnaejel" method="POST" id="contato_formulario"> 
 
-            <div class="mb-3 ">
+            <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email</label>
                 <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
             </div>
@@ -158,7 +157,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
 </body>
 </html>
-
-<!-- 
-    Fazer página para os projetos
--->

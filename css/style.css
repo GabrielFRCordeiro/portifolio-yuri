@@ -3,6 +3,7 @@
     --color-secundary: #ffffff;
     --color-card: #454647dc;
     --color-font: #000000;
+    --color-forms: #8F9297;
 }
 
 *{
@@ -25,16 +26,24 @@ header{
     height: 100%;
 }
 
-#logo{
-    width: 30%;
-    height: 80%;
-}
-
 #navegacao{
     height: 10%;
     background-color: var(--color-primary);
     position: absolute;
     z-index: 1000;
+}
+
+#logo{
+    width: 30%;
+    height: 80%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
 }
 
 #navegacao ul{
@@ -46,8 +55,12 @@ header{
     letter-spacing: 0.2em;
 }
 
-header > div{
+header div{
     height: 100%;
+}
+
+.titulo_secao{
+    left: 25%;
 }
 
 .card_box{
@@ -67,7 +80,15 @@ header > div{
     }
 }
 
+#trabalhos p, #trabalhos p small{
+    color: var(--color-secundary);
+}
+
 #biografia{
+    margin-top: 6rem;
+}
+
+#biografia_texto{
     text-align: justify;
 }
 
@@ -80,32 +101,22 @@ footer{
     background-color: var(--color-primary);
 }
 
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
+i{
+    color: var(--color-secundary);
 }
 
 label{
     color: var(--color-secundary);
 }
 
-i{
-    color: var(--color-secundary);
+#exampleFormControlInput1:focus, #exampleFormControlTextarea1:focus{
+    border: none;
+    box-shadow: none;
+    outline: medium solid var(--color-forms);
 }
 
 #btn_enviar{
     background-color: var(--color-card);
     color: var(--color-secundary);
     border: none;
-}
-
-#trabalhos p, #trabalhos p small{
-    color: var(--color-secundary);
-}
-
-.titulo_secao{
-    left: 25%;
 }

@@ -51,7 +51,6 @@ ul{
 }
 
 #navegacao ul li{
-    
     letter-spacing: 0.2em;
 }
 
@@ -94,6 +93,7 @@ header div{
 
 #foto_yuri{
     border-radius: 250px;
+    box-shadow: var(--color-primary) 6px 2px 16px 0px, var(--color-primary) 6px 2px 16px 0px;
 }
 
 footer{
@@ -113,6 +113,19 @@ label{
     border: none;
     box-shadow: none;
     outline: medium solid var(--color-forms);
+}
+
+#btn_contato{
+    background-color: var(--color-card);
+    color: var(--color-secundary);
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+
+#link_devs{
+    text-decoration: none;
+    color: var(--color-forms);
 }
 
 #btn_enviar{

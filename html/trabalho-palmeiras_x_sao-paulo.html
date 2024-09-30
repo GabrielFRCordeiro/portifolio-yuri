@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuri Fotos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar navbar-expand-lg w-100 pt-0" id="navegacao">
+            <div class="container-lg d-flex align-items-center justify-content-around h-100 p-0">
+                <a class="navbar-brand text-light" href="../index.html"><img src="../assets/logo_white.svg" alt="Logo do Yuri" id="logo"></a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                    <a class="nav-link active text-light" aria-current="page" href="../index.html">HOME</a>
+                </li>
+                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                    <a class="nav-link text-light" href="../index.html#trabalhos">TRABALHOS</a>
+                </li>
+                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                    <a class="nav-link text-light" href="../index.html#biografia">BIOGRAFIA</a>
+                </li>
+                <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
+                    <a class="nav-link text-light" href="../index.html#contato">CONTATO</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100 overflow-hidden">
+                <img src="../assets/fotos_palmeiras_x_sao-paulo/banner.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sobre o trabalho -->
+    <section class="container h-50" id="biografia">
+        <div class="d-flex flex-column h-100 justify-content-around">
+            <h2 class="text-center">Sobre o trabalho</h2>
+            <p id="biografia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum corporis aperiam, deleniti inventore deserunt temporibus culpa tempore odio ipsum! Quibusdam, veritatis. Voluptate quia corrupti, dolorum fugit ipsum perferendis ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quibusdam officiis neque fuga laboriosam ipsum impedit quae. Vero, tempora quaerat ipsam dolorum deserunt sapiente in placeat voluptas qui, temporibus iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque debitis doloremque rem laborum neque. Molestiae ipsa cum, laudantium sequi deleniti minus fugiat. Consequatur, autem. Deserunt similique perferendis cupiditate natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non quisquam. Ipsum vero nostrum quasi, sapiente dolorem consectetur deserunt. Impedit earum, inventore nesciunt excepturi id numquam veritatis fugiat explicabo officia.</p>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <!-- Cards -->
+        <section class="d-flex flex-wrap justify-content-around h-100" id="trabalhos">
+            <h2 class="col-12 text-center">Fotos</h2>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_1.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_1.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_2.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_2.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_3.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_3.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_4.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_4.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_5.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_5.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../assets/fotos_palmeiras_x_sao-paulo/img_6.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
+                <div class="card text-bg-dark card_box img-fluid">
+                    <img src="../assets/fotos_palmeiras_x_sao-paulo/img_6.png" class="card-img w-100 h-100 object-fit-cover" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+     <!-- Barra de rodapé -->
+     <footer class="mt-5 d-flex flex-column flex-md-row justify-content-around align-items-center" id="contato">
+        
+        <!-- Opções de Contatos -->
+        <nav class="col-12 col-md-4">
+            <ul class="my-5 d-flex flex-column justify-content-around">
+                
+                <li class="mb-3">
+                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light" target="_blank">
+                        <i class="bi bi-instagram mx-3"></i> @yurim.ft
+                    </a>
+                </li>
+                
+                <li class="mb-3">
+                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-light" target="_blank">
+                        <i class="bi bi-instagram mx-3"></i> @ruas_alviverdes
+                    </a>
+                </li>
+                
+                <li >
+                    <a href="https://wa.me/+5511991476496" class="text-light" target="_blank">
+                        <i class="bi bi-whatsapp mx-3"></i> (11) 991476496
+                    </a>
+                </li>
+            
+            </ul>
+        
+        </nav>
+
+        <!-- Cadastrar E-mail -->
+        <form class="col-10 col-md-4 my-5"> 
+
+            <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+              
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button type="button" class="btn btn-info" id="btn_enviar">Enviar</button>
+
+        </form>
+      
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+</body>
+</html>
+
+<!-- 
+    Fazer página para os projetos
+-->

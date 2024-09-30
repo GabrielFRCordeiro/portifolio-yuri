@@ -1,0 +1,111 @@
+:root{
+    --color-primary: #000000;
+    --color-secundary: #ffffff;
+    --color-card: #454647dc;
+    --color-font: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Kanit';
+    color: var(--color-font);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-secundary);
+}
+
+header{
+    width: 100%;
+    height: 100%;
+}
+
+#logo{
+    width: 30%;
+    height: 80%;
+}
+
+#navegacao{
+    height: 10%;
+    background-color: var(--color-primary);
+    position: absolute;
+    z-index: 1000;
+}
+
+#navegacao ul{
+    background-color: var(--color-primary);
+}
+
+#navegacao ul li{
+    
+    letter-spacing: 0.2em;
+}
+
+header > div{
+    height: 100%;
+}
+
+.card_box{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: none;
+}
+
+.card_box div{
+    display: none;
+}
+
+.card_box:hover{
+    div{
+        display: block;
+        background-color: var(--color-card);
+        color: var(--color-secundary);
+    }
+}
+
+#biografia{
+    text-align: justify;
+}
+
+#foto_yuri{
+    border-radius: 250px;
+}
+
+footer{
+    width: 100%;
+    background-color: var(--color-primary);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+label{
+    color: var(--color-secundary);
+}
+
+i{
+    color: var(--color-secundary);
+}
+
+#btn_enviar{
+    background-color: var(--color-card);
+    color: var(--color-secundary);
+    border: none;
+}
+
+#trabalhos p, #trabalhos p small{
+    color: var(--color-secundary);
+}
+
+.titulo_secao{
+    left: 25%;
+}

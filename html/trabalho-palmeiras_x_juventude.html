@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
     <title>Yuri Fotos</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -43,24 +44,25 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner h-100">
             <div class="carousel-item active h-100 overflow-hidden">
-                <img src="../assets/fotos_palmeiras_x_juventude/banner.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
+                <img src="../assets/fotos_palmeiras_x_juventude/banner.png" class="d-block w-100 h-100 object-fit-cover" alt="A bandeira da torcida sendo levantada no ar com a seguinte frase: 'Juntos somos mais fortes">
+                <a href="#sobre"><i class="bi bi-caret-down-fill display-3 display-lg-2 position-relative" id="icon_banner"></i></a>
             </div>
             </div>
         </div>
     </header>
 
     <!-- Sobre o trabalho -->
-    <section class="container h-50" id="biografia">
+    <section class="container h-50 my-5" id="sobre">
         <div class="d-flex flex-column h-100 justify-content-around">
-            <h2 class="text-center">Sobre o trabalho</h2>
-            <p id="biografia">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae laborum corporis aperiam, deleniti inventore deserunt temporibus culpa tempore odio ipsum! Quibusdam, veritatis. Voluptate quia corrupti, dolorum fugit ipsum perferendis ut. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero quibusdam officiis neque fuga laboriosam ipsum impedit quae. Vero, tempora quaerat ipsam dolorum deserunt sapiente in placeat voluptas qui, temporibus iusto? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque debitis doloremque rem laborum neque. Molestiae ipsa cum, laudantium sequi deleniti minus fugiat. Consequatur, autem. Deserunt similique perferendis cupiditate natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, non quisquam. Ipsum vero nostrum quasi, sapiente dolorem consectetur deserunt. Impedit earum, inventore nesciunt excepturi id numquam veritatis fugiat explicabo officia.</p>
+            <h2 class="col-12 text-center mb-5 titulo titulo_grande">Sobre o trabalho</h2>
+            <p>A torcida do Palmeiras é conhecida por sua paixão inabalável e tradição centenária. São mais do que uma massa de torcedores, são uma família unida pelo alviverde. Nas arquibancadas, nas ruas e nas redes sociais, o Palmeiras é mais do que um time, é uma identidade!</p>
         </div>
     </section>
 
     <main class="container my-5">
         <!-- Cards -->
-        <section class="d-flex flex-wrap justify-content-around h-100" id="trabalhos">
-            <h2 class="col-12 text-center mb-5">Fotos</h2>
+        <section class="d-flex flex-wrap justify-content-around h-100" id="biografia">
+            <h2 class="col-12 text-center mb-5 titulo titulo_grande">Fotos</h2>
  
             <a href="../assets/fotos_palmeiras_x_juventude/img_1.png" data-toggle="lightbox" data-gallery="mixedgallery" class="col-12 col-md-5 col-lg-3 mb-4 mx-2">
                 <div class="card text-bg-dark card_box img-fluid">
@@ -135,11 +137,11 @@
     </main>
 
      <!-- Barra de rodapé -->
-     <footer class="mt-5 d-flex flex-column flex-md-row justify-content-around align-items-center" id="contato">
+    <footer class="mt-5 d-flex flex-column justify-content-around align-items-center" id="contato">
         
         <!-- Opções de Contatos -->
-        <nav class="col-12 col-md-4">
-            <ul class="my-5 d-flex flex-column justify-content-around">
+        <nav class="col-10">
+            <ul class="my-5 p-0 d-flex flex-column flex-md-row justify-content-around align-items-center">
                 
                 <li class="mb-3">
                     <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light" target="_blank">
@@ -153,32 +155,23 @@
                     </a>
                 </li>
                 
-                <li >
+                <li class="mb-3">
                     <a href="https://wa.me/+5511991476496" class="text-light" target="_blank">
                         <i class="bi bi-whatsapp mx-3"></i> (11) 991476496
                     </a>
+                </li>
+
+                <li class="mb-3">
+                    <a href="html/contatos.html" id="btn_contato" class="py-2 px-5">FALE CONOSCO</a>
                 </li>
             
             </ul>
         
         </nav>
 
-        <!-- Cadastrar E-mail -->
-        <form class="col-10 col-md-4 my-5"> 
-
-            <div class="mb-3 ">
-                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-              
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button type="button" class="btn btn-info" id="btn_enviar">Enviar</button>
-
-        </form>
+        <div class="mb-3">
+            <p class="text-light">Desenvolvido por: <a href="https://linktr.ee/ti97" target="_blank" id="link_devs">TI-97</a></p>
+        </div>
       
     </footer>
 

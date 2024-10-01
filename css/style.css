@@ -6,6 +6,17 @@
     --color-forms: #8F9297;
 }
 
+@font-face {
+    font-family: 'Blank River';
+    src: url(../fonts/Blank\ River.ttf) format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo{
+    font-family: 'Blank River';
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -34,8 +45,7 @@ header{
 }
 
 #logo{
-    width: 30%;
-    height: 80%;
+    width: 20%;
 }
 
 a{
@@ -89,11 +99,16 @@ header div{
 
 #biografia_texto{
     text-align: justify;
+    line-height: 2em;
 }
 
 #foto_yuri{
     border-radius: 250px;
     box-shadow: var(--color-primary) 6px 2px 16px 0px, var(--color-primary) 6px 2px 16px 0px;
+}
+
+#foto_yuri:hover{
+    animation: flash 0.5s normal;
 }
 
 footer{
@@ -120,7 +135,8 @@ label{
     color: var(--color-secundary);
     border: none;
     border-radius: 10px;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.4em;
+    font-size: 0.8em;
 }
 
 #link_devs{
@@ -132,4 +148,29 @@ label{
     background-color: var(--color-card);
     color: var(--color-secundary);
     border: none;
+}
+
+@keyframes flash {
+    0%{
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 20%;
+    }
+
+    100%{
+        opacity: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .titulo_grande{
+        font-size: 10em;
+    }
+}
+
+#icon_banner{
+    bottom: 10%;
+    left: 48%;
 }

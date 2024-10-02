@@ -72,6 +72,24 @@ header div{
     left: 25%;
 }
 
+.form-control:hover{
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+}
+ 
+.form-control:focus{
+    color: var(--color-secundary);
+    background-color: var(--color-primary);
+}
+
+.form-control:hover::placeholder{
+    color: var(--color-secundary);
+}
+ 
+.form-control:focus::placeholder{
+    color: var(--color-secundary);
+}
+
 .card_box{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     border: none;
@@ -81,12 +99,10 @@ header div{
     display: none;
 }
 
-.card_box:hover{
-    div{
+.card_box:hover div{
         display: block;
         background-color: var(--color-card);
         color: var(--color-secundary);
-    }
 }
 
 #trabalhos p, #trabalhos p small{
@@ -108,6 +124,17 @@ header div{
 }
 
 #foto_yuri:hover{
+    animation: flash 0.5s normal;
+}
+
+#foto_yuri_contato{
+    border-radius: 250px;
+    box-shadow: var(--color-primary) 6px 2px 16px 0px, var(--color-primary) 6px 2px 16px 0px;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+
+#foto_yuri_contato:hover{
     animation: flash 0.5s normal;
 }
 
@@ -168,9 +195,26 @@ label{
     .titulo_grande{
         font-size: 10em;
     }
+
+    #descricao_trabalho{
+        font-size: 1.5em !important;
+    }
 }
 
 #icon_banner{
     bottom: 10%;
     left: 48%;
+}
+
+.icon_contato{
+    color: var(--color-font);
+}
+
+#descricao_trabalho{
+    text-align: justify;
+    line-height: 2em;
+}
+
+.titulo_grande{
+    font-size: 5em;
 }

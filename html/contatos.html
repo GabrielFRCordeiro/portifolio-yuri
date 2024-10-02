@@ -51,62 +51,52 @@
         </div>
     </header>
 
-    <main class="container my-5 bg-dark" id="secao_contato">
-        <h2 class="col-12 text-center mb-5">CONTATO</h2>
-
-        <nav class="col-12 col-md-4">
-            <ul class="my-5 d-flex flex-column justify-content-around">
-                
+    <h2 class="col-12 text-center display-1 mb-5 titulo titulo_grande">Contato</h2>
+    <main class="container my-5 d-flex flex-column flex-md-row align-items-center" id="secao_contato">
+       <!-- col-md-10  -->
+ 
+    <!-- <nav class="d-flex col-12 flex-column flex-sm-column col-md-10 flex-md-row flex-lg-row align-items-center"> -->
+        <ul class="col-12 text-center text-md-start text-lg-end col-md-4 ps-0 pe-5 mb-5 mb-md-5">
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light" target="_blank">
-                        <i class="bi bi-instagram mx-3"></i> @yurim.ft
+                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-dark" target="_blank"><i class="bi bi-instagram mx-3 icon_contato"></i> @yurim.ft
                     </a>
                 </li>
-                
+                   
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-light" target="_blank">
-                        <i class="bi bi-instagram mx-3"></i> @ruas_alviverdes
+                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-dark" target="_blank"><i class="bi bi-instagram mx-3 icon_contato"></i> @ruas_alviverdes
                     </a>
                 </li>
-                
-                <li >
-                    <a href="https://wa.me/+5511991476496" class="text-light" target="_blank">
-                        <i class="bi bi-whatsapp mx-3"></i> (11) 991476496
+                   
+                <li class="mb-3">
+                    <a href="https://wa.me/+5511991476496" class="text-dark" target="_blank"><i class="bi bi-whatsapp mx-3 icon_contato"></i> (11) 991476496
                     </a>
                 </li>
-            
-            </ul>
-        
-        </nav>
-
-        <form class="col-10 col-md-4 my-5" action="https://formspree.io/f/mnnaejel" method="POST" id="contato_formulario"> 
-
-            <div class="mb-3">
-                <input type="nome" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
-            </div>
-
-            <div class="mb-3">
-                <input type="nome" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Sobrenome">
-            </div>
-
-            <div class="mb-3">
-                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="E-Mail">
-            </div>
-
-            <div class="mb-3">
-                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
-            </div>
-              
-            <div class="mb-3">
-                <textarea class="form-control" name="mensagem" id="exampleFormControlTextarea1" rows="3" placeholder="Envie uma mensagem para mim"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-info" id="btn_enviar">Enviar</button>
-
+ 
+        </ul>
+           
+        <div class="col-6 col-md-4 me-md-5 col-lg-4 me-lg-0 pe-lg-5 mb-3">
+            <img src="../assets/img_sobre-mim.png" alt="Fotógrafo Yuri, usando camiseta do Palmeiras, segurando uma câmera" id="foto_yuri_contato" class="w-100 m-0 foto_click">
+            <audio src="../assets/som_flash.mp3" id="som_flash"></audio>
+        </div>
+       
+        <form class="col-8 col-md-4 my-5" action="https://formspree.io/f/mnnaejel" method="POST" id="contato_formulario">
+ 
+            <input type="nome" name="nome" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nome">
+     
+            <input type="nome" name="sobrenome" class="form-control mb-2" id="exampleFormControlInput2" placeholder="Sobrenome">
+     
+            <input type="email" name="email" class="form-control mb-2" id="exampleFormControlInput3" placeholder="E-Mail">
+                 
+            <textarea class="form-control mb-2" name="mensagem" id="exampleFormControlInput5" rows="3" placeholder="Envie uma mensagem para mim"></textarea>
+     
+            <button type="submit" class="btn btn-info" id="btn_enviar" onclick="sendEmail()">Enviar</button>
+     
         </form>
+        
+    <!-- </nav> -->
+ 
 
-
-
+ 
     </main>
 
      <!-- Barra de rodapé -->
@@ -118,19 +108,19 @@
                 
                 <li class="mb-3">
                     <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light" target="_blank">
-                        <i class="bi bi-instagram mx-3"></i> @yurim.ft
+                        <i class="bi bi-instagram"></i> @yurim.ft
                     </a>
                 </li>
                 
                 <li class="mb-3">
                     <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-light" target="_blank">
-                        <i class="bi bi-instagram mx-3"></i> @ruas_alviverdes
+                        <i class="bi bi-instagram"></i> @ruas_alviverdes
                     </a>
                 </li>
                 
                 <li class="mb-3">
                     <a href="https://wa.me/+5511991476496" class="text-light" target="_blank">
-                        <i class="bi bi-whatsapp mx-3"></i> (11) 991476496
+                        <i class="bi bi-whatsapp"></i> (11) 991476496
                     </a>
                 </li>
 
@@ -150,5 +140,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script src="../js/tocar_som_flash.js"></script>
 </body>
 </html>

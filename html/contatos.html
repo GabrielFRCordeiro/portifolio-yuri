@@ -15,8 +15,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-    <header>
+<body id="fundo_contato">
+    <header id="header_contato">
         <!-- Barra de navegação -->
         <nav class="navbar navbar-expand-lg w-100 pt-0" id="navegacao">
             <div class="container-lg d-flex align-items-center justify-content-around h-100 p-0">
@@ -27,48 +27,37 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                            <a class="nav-link text-light" href="../index.html#trabalhos">TRABALHOS</a>
+                            <a class="nav-link text-light efeito-linha" href="../index.html#trabalhos">TRABALHOS</a>
                         </li>
                         <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                            <a class="nav-link text-light" href="../index.html#biografia">BIOGRAFIA</a>
+                            <a class="nav-link text-light efeito-linha" href="../index.html#biografia">BIOGRAFIA</a>
                         </li>
                         <li class="nav-item text-end me-3 me-lg-0 ms-lg-3 text-center">
-                            <a class="nav-link text-light" href="#secao_contato">CONTATO</a>
+                            <a class="nav-link text-light efeito-linha" href="#secao_contato">CONTATO</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <!-- Banner -->
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner h-100">
-            <div class="carousel-item active h-100 overflow-hidden">
-                <img src="../assets/fotos_treinador/banner.png" class="d-block w-100 h-100 object-fit-cover" alt="...">
-                <a href="#secao_contato"><i class="bi bi-caret-down-fill display-3 display-lg-2 position-relative" id="icon_banner"></i></a>
-            </div>
-            </div>
-        </div>
+        
     </header>
 
-    <h2 class="col-12 text-center display-1 mb-5 titulo titulo_grande">Contato</h2>
-    <main class="container my-5 d-flex flex-column flex-md-row align-items-center" id="secao_contato">
-       <!-- col-md-10  -->
+    <h2 class="col-12 text-center display-1 mt-5 titulo titulo_grande texto_contato">Contato</h2>
+    <main class="container mb-5 d-flex flex-column flex-md-row align-items-center h-50" id="secao_contato">
  
-    <!-- <nav class="d-flex col-12 flex-column flex-sm-column col-md-10 flex-md-row flex-lg-row align-items-center"> -->
         <ul class="col-12 text-center text-md-start text-lg-end col-md-4 ps-0 pe-5 mb-5 mb-md-5">
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-dark" target="_blank"><i class="bi bi-instagram mx-3 icon_contato"></i> @yurim.ft
+                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="texto_contato" target="_blank"><i class="bi bi-instagram mx-3"></i> @yurim.ft
                     </a>
                 </li>
                    
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-dark" target="_blank"><i class="bi bi-instagram mx-3 icon_contato"></i> @ruas_alviverdes
+                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="texto_contato" target="_blank"><i class="bi bi-instagram mx-3"></i> @ruas_alviverdes
                     </a>
                 </li>
                    
                 <li class="mb-3">
-                    <a href="https://wa.me/+5511991476496" class="text-dark" target="_blank"><i class="bi bi-whatsapp mx-3 icon_contato"></i> (11) 991476496
+                    <a href="https://wa.me/+5511991476496" class="texto_contato" target="_blank"><i class="bi bi-whatsapp mx-3"></i> (11) 991476496
                     </a>
                 </li>
  
@@ -79,21 +68,19 @@
             <audio src="../assets/som_flash.mp3" id="som_flash"></audio>
         </div>
        
-        <form class="col-8 col-md-4 my-5" action="https://formspree.io/f/mnnaejel" method="POST" id="contato_formulario">
+        <form class="col-8 col-md-4 my-5" action="https://formspree.io/f/xovqaqvw" method="POST" id="contato_formulario">
  
-            <input type="nome" name="nome" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nome">
+            <input type="nome" name="nome" class="form-control mb-2" id="exampleFormControlInput1" placeholder="Nome" required>
      
             <input type="nome" name="sobrenome" class="form-control mb-2" id="exampleFormControlInput2" placeholder="Sobrenome">
      
-            <input type="email" name="email" class="form-control mb-2" id="exampleFormControlInput3" placeholder="E-Mail">
+            <input type="email" name="email" class="form-control mb-2" id="exampleFormControlInput3" placeholder="E-Mail" required>
                  
-            <textarea class="form-control mb-2" name="mensagem" id="exampleFormControlInput5" rows="3" placeholder="Envie uma mensagem para mim"></textarea>
+            <textarea class="form-control mb-2" name="mensagem" id="exampleFormControlInput5" rows="3" placeholder="Envie uma mensagem para mim" required></textarea>
      
             <button type="submit" class="btn btn-info" id="btn_enviar" onclick="sendEmail()">Enviar</button>
      
         </form>
-        
-    <!-- </nav> -->
  
 
  
@@ -107,25 +94,25 @@
             <ul class="my-5 p-0 d-flex flex-column flex-md-row justify-content-around align-items-center">
                 
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light" target="_blank">
+                    <a href="https://www.instagram.com/yurim.ft?igsh=MXg5Z3pxN29tbGQwMA==" class="text-light efeito-linha" target="_blank">
                         <i class="bi bi-instagram"></i> @yurim.ft
                     </a>
                 </li>
                 
                 <li class="mb-3">
-                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-light" target="_blank">
+                    <a href="https://www.instagram.com/ruas_alviverdes?igsh=azlzc3d2YTJ0Mmxl" class="text-light efeito-linha" target="_blank">
                         <i class="bi bi-instagram"></i> @ruas_alviverdes
                     </a>
                 </li>
                 
                 <li class="mb-3">
-                    <a href="https://wa.me/+5511991476496" class="text-light" target="_blank">
+                    <a href="https://wa.me/+5511991476496" class="text-light efeito-linha" target="_blank">
                         <i class="bi bi-whatsapp"></i> (11) 991476496
                     </a>
                 </li>
 
                 <li class="mb-3">
-                    <a href="html/contatos.html" id="btn_contato" class="py-2 px-5">FALE CONOSCO</a>
+                    <a href="#" id="btn_contato" class="py-2 px-5">FALE CONOSCO</a>
                 </li>
             
             </ul>
@@ -133,7 +120,7 @@
         </nav>
 
         <div class="mb-3">
-            <p class="text-light">Desenvolvido por: <a href="https://linktr.ee/ti97" target="_blank" id="link_devs">TI-97</a></p>
+            <p class="text-light">Desenvolvido por: <a href="https://linktr.ee/ti97" target="_blank" id="link_devs">FrontVision</a></p>
         </div>
       
     </footer>

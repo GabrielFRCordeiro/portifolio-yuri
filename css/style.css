@@ -151,7 +151,7 @@ label{
     color: var(--color-secundary);
 }
 
-#exampleFormControlInput1:focus, #exampleFormControlTextarea1:focus{
+.form-control:hover, .form-control:focus{
     border: none;
     box-shadow: none;
     outline: medium solid var(--color-forms);
@@ -206,10 +206,6 @@ label{
     left: 48%;
 }
 
-.icon_contato{
-    color: var(--color-font);
-}
-
 #descricao_trabalho{
     text-align: justify;
     line-height: 2em;
@@ -217,4 +213,20 @@ label{
 
 .titulo_grande{
     font-size: 5em;
+}
+
+.efeito-linha:hover{
+    text-decoration: underline 2px;
+}
+
+#fundo_contato{
+    background-image: url("../assets/fotos_treinador/banner.png");
+}
+
+#header_contato{
+    height: 10%;
+}
+
+.texto_contato{
+    color: var(--color-secundary);
 }
